@@ -1422,7 +1422,7 @@ figcaption {
   -webkit-box-flex: 1;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
+  flex: 1 1 auto;
   font-size: 30px;
   line-height: 36px;
 }
@@ -2068,4 +2068,3 @@ html.w-mod-js *[data-ix="load-up"] {
     width: auto;
   }
 }
-
