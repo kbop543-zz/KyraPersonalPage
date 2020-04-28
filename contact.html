@@ -23,7 +23,7 @@
     <nav role="navigation" class="nav-menu w-nav-menu">
       <a href="index.html" aria-current="page" class="link-nav w-nav-link w--current">Home</a>
       <a href="about.html" class="link-nav w-nav-link">About</a>
-      <a href="assets/kyra-resume-final.pdf" target="_blank" class="link-nav w-nav-link">Resume</a>
+      <a href="assets/KS_resume.pdf" target="_blank" class="link-nav w-nav-link">Resume</a>
       <a href="contact.html" class="link-nav w-nav-link">Contact</a>
     </nav>
     <div class="w-nav-button">
@@ -46,11 +46,14 @@
         <div class="wrap-content">
           <div class="_w-form">
             <div class="w-form">
-              <form id="email-form" name="email-form" data-name="Email Form" action="/#" method="post" data-netlify="true">
-                <input type="text" class="field w-input" maxlength="256" name="name" data-name="Name" placeholder="Your Name" id="name">
-                <input type="text" class="field w-input" maxlength="256" name="name-2" data-name="Name 2" placeholder="Your Email" id="name-2">
-                <textarea id="field" name="field" placeholder="Message" maxlength="5000" class="field w-input"></textarea>
-                <input type="submit" value="Submit" data-wait="Please wait..." class="button w-button"></form>
+              <form id="email-form" name="email-form" data-name="Email Form" netlify-honeypot="bot-field" data-netlify-recaptcha="true"
+            action="/#" method="post" data-netlify="true">
+                <input type="text" class="field w-input" maxlength="256" name="name" data-name="Name" placeholder="Your Name" id="name" required>
+                <input type="text" class="field w-input" maxlength="256" name="name-2" data-name="Name 2" placeholder="Your Email" id="name-2" required>
+                <textarea id="field" name="field" placeholder="Message" maxlength="5000" class="field w-input" required></textarea>
+                <div data-netlify-recaptcha="true"></div>
+                <input type="submit" value="Submit" data-wait="Please wait..." class="button w-button">
+              </form>
               <div class="w-form-done">
                 <div>Thank you! Your submission has been received!</div>
               </div>
